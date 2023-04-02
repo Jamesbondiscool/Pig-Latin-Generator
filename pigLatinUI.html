@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pigLatin.css" />
+    <script src="pigLatin.js"></script>
+    <title>Pig Latin Generator</title>
+</head>
+<body>
+    <audio id="music">
+        <source src="pig.wav">
+    </audio>
+    <div class="bg-image" id="body">
+    <div class="title">
+        <h1>
+            Pig Latin Generator
+        </h1>
+    </div>
+    <div class="hello">
+        <p>
+            Hello and welcome to my Pig Latin generator! Simply enter any English word into the textfield and watch as we transform English into Pig Latin!
+        </p>
+    </div>
+    <div class="textBoxContainer">
+        <label class="custom-field">
+        <input type="text" class="textBox" id="inputElement" maxlength="45" required/>
+        <span class="placeholder">English word here</span>
+        </label>
+        <div class="buttonContainer">
+            <input type="submit" value="Oink!" class="submitButton" onclick="translation()">
+        </div>
+    </div>
+    <div class="display">
+        <h1 id="outputElement">
+        
+        </h1>
+    </div>
+    </div>
+</body>
+</html>

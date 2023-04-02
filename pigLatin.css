@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 4px;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.title {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.hello {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  letter-spacing: none;
+}
+
+.textBoxContainer {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  margin: auto;
+  margin-top: 0;
+}
+
+.custom-field {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.textBox {
+  height: 25px;
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid #222;
+  appearance: none;
+  background: none;
+  padding: 12px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.placeholder {
+  position: absolute;
+  left: 12px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid,
+.custom-field input:focus {
+  border-color: #222;
+  transition-delay: 0.1s;
+}
+
+.custom-field input + .placeholder {
+  padding: 0 5px;
+  left: 8px;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+  top: 20px;
+  font-size: 12px;
+  color: #222;
+  background: #fff;
+}
+
+.buttonContainer {
+  padding-top: 20px;
+}
+
+.submitButton {
+  height: 50px;
+  width: 100px;
+  border: solid black;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.submitButton:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+}
+
+.englishHere {
+  margin-top: 0px;
+}
+
+.display {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+#outputElement {
+  margin-top: 0;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  position: relative;
+  animation-name: morph;
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+
+p {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid lightgray;
+  border-top-color: black;
+  animation: spinner 0.7s linear infinite;
+}
+
+.bg-image {
+  background-image: url(flying-pig-260nw-646108162.png),
+    url(flying-pig-illustration-drawing-260nw-1211139319.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left, center right;
+  background-color: gold;
+}
+
+@keyframes morph {
+  from {
+    letter-spacing: 30px;
+  }
+  to {
+    letter-spacing: 8px;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

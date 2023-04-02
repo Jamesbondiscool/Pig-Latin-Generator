@@ -1,0 +1,20 @@
+{
+  "name": "piglatin",
+  "version": "1.0.0",
+  "description": "Pig Latin Generator with UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "html/pigLatinUI.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoreyTyler/PigLatin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoreyTyler/PigLatin/issues"
+  },
+  "homepage": "https://github.com/CoreyTyler/PigLatin#readme"
+}
